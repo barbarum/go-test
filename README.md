@@ -17,4 +17,4 @@ This is the tutorial application to walk through go project setup.
 
 ## List of Features
 
-* [Tutorial to write go test cases](./src/main/greeting/)
+* [How to write test cases and use assert, mock and suite](./src/main/greeting/)
