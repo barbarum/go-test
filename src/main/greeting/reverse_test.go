@@ -2,6 +2,8 @@ package greeting_test
 
 import (
 	"github.com/barbarum/go-test/src/main/greeting"
+	"log"
+	"os"
 	"testing"
 )
 
@@ -21,4 +23,13 @@ func TestReverse(t *testing.T) {
 			t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
 		}
 	}
+}
+
+func TestFileOpen(t *testing.T) {
+	_, err := os.Open("./testdata/dummy.txt")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
 }
