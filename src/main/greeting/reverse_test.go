@@ -1,6 +1,9 @@
-package greeting
+package greeting_test
 
-import "testing"
+import (
+	"github.com/barbarum/go-test/src/main/greeting"
+	"testing"
+)
 
 func TestReverse(t *testing.T) {
 	cases := []struct {
@@ -8,10 +11,11 @@ func TestReverse(t *testing.T) {
 	}{
 		{"Hello World", "dlroW olleH"},
 		{"", ""},
+		{"i", "i"},
 	}
 
 	for _, c := range cases {
-		got := Reverse(c.in)
+		got := greeting.Reverse(c.in)
 
 		if got != c.want {
 			t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
