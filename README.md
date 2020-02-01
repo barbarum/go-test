@@ -14,3 +14,7 @@ This is the tutorial application to walk through go project setup.
     go install # Install the application at the project root directory
     go-test # Run the application
 ```
+
+## List of Features
+
+* [Tutorial to write go test cases](./src/main/greeting/)
