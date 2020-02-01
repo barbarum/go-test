@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Hello, go application developer!")
-	fmt.Println(greeting.Reverse("!oG"))
+	fmt.Println(greeting.Reverse("!noitacilppa oG"))
 	// fmt.Println(cmp.Diff("test", "test1"))
 }
